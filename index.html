@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Midnight Crust Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div id="scrollProgress"></div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <span class="logo-mark">MC</span>
+    <span class="logo-text">Midnight Crust</span>
+  </div>
+  <nav class="nav">
+    <a href="#hero">Home</a>
+    <a href="#favorites">Favorites</a>
+    <a href="#story">Our Story</a>
+    <a href="#contact">Contact</a>
+    <span class="nav-cart">Cart (0)</span>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero section">
+    <!-- floating flour particles -->
+    <div class="hero-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="hero-left reveal">
+      <p class="hero-tag">TRADITIONAL • ARTISAN • FRESH</p>
+
+      <!-- will be animated letter-by-letter -->
+      <h1 class="hero-title">
+        Handcrafted Bread & Cakes Baked After Dark
+      </h1>
+
+      <p class="hero-sub">
+        Slow-fermented dough, stone-baked loaves, and indulgent cakes crafted
+        in our midnight bakery for mornings you’ll never forget.
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn primary">Shop Signature Loaves</button>
+        <button class="btn ghost" id="viewMenuBtn">View Today’s Menu</button>
+      </div>
+
+      <div class="hero-meta">
+        <div>
+          <span class="meta-label">Location</span>
+          <span class="meta-value">Muzaffarpur • Open 7am–10pm</span>
+        </div>
+        <div>
+          <span class="meta-label">Baked Today</span>
+          <span class="meta-value">Country Sourdough · Brioche Loaf · Cocoa Crust Cake</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="hero-image-wrap">
+        <!-- parallax bread image -->
+        <img src="assets/ -5.jpg" alt="Bread with flour splash"
+             class="hero-img parallax" data-speed="0.18">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED SPOTLIGHT -->
+  <section id="spotlight" class="spotlight section">
+    <div class="spotlight-inner reveal">
+      <div class="spotlight-text">
+        <p class="section-kicker">Today’s Chef Pick</p>
+        <h2 class="section-title">Cocoa Crust Berry Cake</h2>
+        <p>
+          A rich cocoa sponge layered with vanilla cream and roasted berries,
+          finished with a crackly sugar crust. Limited batches every night.
+        </p>
+        <ul class="spotlight-list">
+          <li>Fresh berries & whipped vanilla cream</li>
+          <li>72% dark chocolate ganache drizzle</li>
+          <li>Baked after midnight, served at sunrise</li>
+        </ul>
+        <div class="spotlight-price">
+          <span class="price-main">299.00</span>
+          <span class="price-note">Serves 4–6 people</span>
+        </div>
+        <button class="btn primary spotlight-btn">Add Chef Pick to Cart</button>
+      </div>
+
+      <div class="spotlight-image">
+        <!-- you can reuse berry-puff.jpg here -->
+        <div class="spotlight-img-wrap">
+          <img src="assets/Birthday cake Photos - Download Free High-Quality Pictures | Freepik.jpg" alt="Spotlight cake">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAVORITES GRID -->
+  <section id="favorites" class="favorites section">
+    <div class="section-header reveal">
+      <p class="section-kicker">Menu Highlights</p>
+      <h2 class="section-title">Customer Favourites</h2>
+    </div>
+
+    <div class="cards-grid">
+      <article class="card reveal">
+        <div class="card-img-wrap">
+          <img src="assets/Bread, rye bread — Food kitchen poster_blackboard, photo art - Art Print.jpg" alt="Wholegrain loaf">
+        </div>
+        <h3>Wholegrain Hearth</h3>
+        <p class="card-desc">Crunchy crust, deep nutty flavour for slow mornings.</p>
+        <div class="card-meta">
+          <span class="card-price">199.00</span>
+          <button class="btn small add-btn" data-product="Wholegrain Hearth">Add</button>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-img-wrap">
+          <img src="assets/Delicious Chocolate Puff Pastry.jpg" alt="Multigrain bread">
+        </div>
+        <h3>Midnight Multigrain</h3>
+        <p class="card-desc">Seeded energy loaf with caramelised crust.</p>
+        <div class="card-meta">
+          <span class="card-price">129.00</span>
+          <button class="btn small add-btn" data-product="Midnight Multigrain">Add</button>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-img-wrap">
+          <img src="assets/Summer Deep Chocolate Berry Layer Cake.jpg" alt="Berry pastry">
+        </div>
+        <h3>Berry Cloud Puff</h3>
+        <p class="card-desc">Flaky pastry, vanilla cream and slow-roasted berries.</p>
+        <div class="card-meta">
+          <span class="card-price">99.50</span>
+          <button class="btn small add-btn" data-product="Berry Cloud Puff">Add</button>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-img-wrap">
+          <img src="assets/Recipes - Dark Velvet Strawberry Cake 🍰 | Facebook.jpg" alt="Baguette">
+        </div>
+        <h3>French Night Baguette</h3>
+        <p class="card-desc">Golden crackly crust with a silky, open crumb.</p>
+        <div class="card-meta">
+          <span class="card-price">150.00</span>
+          <button class="btn small add-btn" data-product="French Night Baguette">Add</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="story section">
+    <div class="story-inner reveal">
+      <h2 class="section-title">Our Midnight Ritual</h2>
+      <p>
+        While the city sleeps, our ovens roar to life. We mill grains, knead dough,
+        and layer pastries by hand — no shortcuts, no frozen mixes.
+      </p>
+      <p>
+        Every loaf and cake is baked in small batches and served within hours of leaving
+        the oven. From country sourdough to cocoa–crusted celebration cakes, we’re here
+        to turn mornings and late-night cravings into small rituals of joy.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="contact-inner reveal">
+      <h2 class="section-title">Visit or Say Hello</h2>
+      <p>Pre-order cakes, reserve loaves, or plan your next celebration.</p>
+
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>Bakery</h3>
+          <p>123 Midnight Lane<br>Downtown City</p>
+          <p>Open Daily · 7:00am – 10:00pm</p>
+        </div>
+        <div class="contact-block">
+          <h3>Contact</h3>
+          <p>Phone: +91 6200964876</p>
+          <p>Email: hello@midnightcrust.com</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="3" placeholder="What can we bake for you?" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- CART MODAL -->
+<div class="modal" id="cartModal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close cart">×</button>
+    <h3>Added to Cart</h3>
+    <p class="modal-product-name"></p>
+    <p class="modal-note">Demo only .</p>
+    <button class="btn primary modal-ok">Keep Browsing</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2025 Midnight Crust Bakery • Baked with patience & love</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
