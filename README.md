@@ -6,7 +6,7 @@ The design is inspired by luxury food brands and focuses on **cinematic animatio
 ---
 
 ## ✨ Live Preview
-> (Add your GitHub Pages link here after deployment)
+>https://sa50tyam11.github.io/Cake-Shop/
 
 ---
 
